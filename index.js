@@ -1,18 +1,20 @@
 // import { name } from "./module";
 // import "./style.css";
-// import isEmail from "validator/lib/isEmail";
+
+// console.log("Your name " + name);
+
+// import isEmail from "validator/lib/isEmail"; // ми заімпортили validator
+// // з бібліотеки
 // import isURL from "validator/lib/isURL";
 // import toDate from "validator/lib/toDate";
-// // console.log("Your name: " + name);
 
-// console.log(isEmail("foo@bar.com"));
-// console.log(
-//   isURL(
-//     "https://edo.vchasno.ua/app/documents?utm_source=document_info&utm_campaign=Prishli_documenty_na_podpis&utm_medium=email&cid=d83562d4-1a05-464c-94df-1ae14df19292&folder_id=6008"
-//   )
-// );
-// console.log(toDate("12.12.2000"));
+// console.log(isEmail("foo@bar.com")); // true
+// console.log(isURL("is it ok?")); // false
+// console.log(isURL("http://work.ua")); // true
+// console.log(toDate("foo@bar.com")); // null тому що це не дата
+// console.log(toDate("10.11.2024")); // Fri Oct 2024 тому що це дата
 
-var moment = require("moment");
+// var moment = require("moment");
 
-console.log(moment().format("MMM Do YY"));
+// console.log(moment().format("MMMM Do YYYY, h:mm:ss a"));
+// console.log(moment().format("MMM Do YY"));

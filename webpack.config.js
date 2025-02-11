@@ -16,12 +16,13 @@ module.exports = {
         use: ["style-loader", "css-loader"],
       },
       {
-        test: /\.m?js$/,
+        test: /\.(?:js|mjs|cjs)$/,
         exclude: /node_modules/,
         use: {
           loader: "babel-loader",
           options: {
-            presets: [["@babel/preset-env", { targets: "defaults" }]],
+            targets: "defaults",
+            presets: [["@babel/preset-env"]],
           },
         },
       },
